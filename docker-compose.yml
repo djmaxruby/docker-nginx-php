@@ -14,7 +14,8 @@ services:
     links:
       - php
   php:
-    build: ./
+#    build: ./
+    image: mbeketov18/untilla-php7
     container_name: dev_php_untilla
     volumes:
       - ./html:/var/www/html
